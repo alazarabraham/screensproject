@@ -4,11 +4,14 @@ import { PendingComponent } from './components/dashboard/pending/pending.compone
 import { HomeComponent } from './components/home/home.component';
 import { FlatfileComponent } from './components/ingestions/flatfile/flatfile.component';
 import { RdbmsComponent } from './components/ingestions/rdbms/rdbms.component';
+import { StreamdataComponent } from './components/ingestions/streamdata/streamdata/streamdata.component';
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'pending', component: PendingComponent },
   { path: 'ingestflatfile', component: FlatfileComponent },
-  { path: 'ingestrdbms', component: RdbmsComponent }
+  { path: 'ingestrdbms', component: RdbmsComponent },
+  { path: 'ingeststreamdata', component: StreamdataComponent }
+
 
 
 ];
@@ -18,4 +21,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponents = [HomeComponent, PendingComponent, FlatfileComponent, RdbmsComponent]
+export const routingComponents = [HomeComponent, PendingComponent, FlatfileComponent, RdbmsComponent, StreamdataComponent]

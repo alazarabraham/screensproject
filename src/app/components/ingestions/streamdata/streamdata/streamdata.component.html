@@ -1,0 +1,183 @@
+<div class="container-sm">
+
+    <!--Navbar-->
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand"routerLink="/home">Qubz</a>
+        <i class="fas fa-user"></i>
+    </nav>
+</div>
+
+<!-- Sidebar -->
+<app-sidebar></app-sidebar>
+
+    <!--Content-->
+    <!--First row-->
+<div class="container-lg">
+    <div class="row mt-2">
+        <div class="col">
+            <h1 class="h1">Ingest Stream data</h1>
+        </div>
+    </div>
+
+</div>
+    <!--Second row (SEARCH BAR)-->
+
+<div class="container-sm">
+    <div class="row mt-2">
+             <!--Steps for ingestions-->
+
+            <div class="col-2" >    
+                    <i class="fas fa-database" ></i>                
+                <h1 class="h6">Source Data</h1>
+            </div>
+            <!-- <div class="col-1">    
+                <i class="fas fa-arrow-alt-circle-right"></i>
+            </div> -->
+            <div class="col-2">    
+                <i class="fas fa-wrench"></i>
+                <h1 class="h6">Configure Ingestion</h1>
+            </div>
+            <div class="col-2">    
+                <i class="fas fa-table"></i>
+                <h1 class="h6">Filter Table</h1>
+            </div>
+            <div class="col-2">    
+                <i class="fas fa-spinner"></i>
+                <h1 class="h6">Queing Tables</h1>
+            </div>
+            <div class="col-2">    
+                <i class="fas fa-info"></i>
+                <h1 class="h6">Configuration Details</h1>
+            </div>
+    </div>
+</div>
+
+    <!--RDBMS card / tabular navs-->
+
+
+    <div class="row mt-4">
+    
+        <div class="container-fluid">
+            <div class="card text-black bg-light mb-3">
+                <div class="card-header"> 
+                    <ul class="nav nav-tabs card-header-tabs pull-right"  id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="mySQL-tab" data-toggle="tab" href="#mySQL" role="tab" aria-controls="mySQL" aria-selected="true">MySQL</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="oracle-tab" data-toggle="tab" href="#oracle" role="tab" aria-controls="oracle" aria-selected="false">Oracle</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#db" role="tab" aria-controls="db" aria-selected="false">DB</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <div class="tab-content" id="myTabContent">
+                        <!-- MySQL Tab -->
+                        <div class="tab-pane fade show active" id="mySQL" role="tabpanel" aria-labelledby="mySQL-tab">
+                            <div class="row">
+                                <div class="col-md-4 mx-auto">
+                                   <div class="myform form ">
+                                      <form action="" method="post" name="mySQLForm">
+                                         <div class="form-group">
+                                            <input type="text" name="url"  class="form-control my-input" id="url" placeholder="Enter mySQL Request URL">
+                                         </div>
+                                         <div class="form-group">
+                                            <input type="text" name="username"  class="form-control my-input" id="username" placeholder="Username">
+                                         </div>
+                                         <div class="form-group">
+                                            <input type="password" min="0" name="password" id="password"  class="form-control my-input" placeholder="Password">
+                                         </div>
+                                         <div class="text-center ">
+                                            <button type="submit" class=" btn btn-outline-primary send-button tx-tfm">Submit</button>
+                                         </div>
+                                      </form>
+                                   </div>
+                                </div>
+                             </div>
+                        </div>
+                        <!-- Oracle Tab -->
+                        <div class="tab-pane fade" id="oracle" role="tabpanel" aria-labelledby="oracle-tab">
+                            <div class="row">
+                                <div class="col-md-4 mx-auto">
+                                   <div class="myform form ">
+                                      <form action="" method="post" name="oracleForm">
+                                         <div class="form-group">
+                                            <input type="text" name="url"  class="form-control my-input" id="url" placeholder="Enter Oracle Request URL">
+                                         </div>
+                                         <div class="form-group">
+                                            <input type="text" name="username"  class="form-control my-input" id="username" placeholder="Username">
+                                         </div>
+                                         <div class="form-group">
+                                            <input type="password" min="0" name="password" id="password"  class="form-control my-input" placeholder="Password">
+                                         </div>
+                                         <div class="text-center ">
+                                            <button type="submit" class=" btn btn-outline-primary send-button tx-tfm">Submit</button>
+                                         </div>
+                                      </form>
+                                   </div>
+                                </div>
+                             </div>
+                        </div>
+                        <!-- DB Tab -->
+                        <div class="tab-pane fade" id="db" role="tabpanel" aria-labelledby="db-tab">
+                            <div class="row">
+                                <div class="col-md-4 mx-auto">
+                                   <div class="myform form ">
+                                      <form action="" method="post" name="mySQLForm">
+                                         <div class="form-group">
+                                            <input type="text" name="url"  class="form-control my-input" id="url" placeholder="Enter DB Request URL">
+                                         </div>
+                                         <div class="form-group">
+                                            <input type="text" name="username"  class="form-control my-input" id="username" placeholder="Username">
+                                         </div>
+                                         <div class="form-group">
+                                            <input type="password" min="0" name="password" id="password"  class="form-control my-input" placeholder="Password">
+                                         </div>
+                                         <div class="form-group">
+                                            <input type="text" name="hostname"  class="form-control my-input" id="host" placeholder="Hostname">
+                                         </div>
+                                         <div class="form-group">
+                                            <input type="text" name="port"  class="form-control my-input" id="port" placeholder="Port">
+                                         </div>
+                                         <div class="form-group">
+                                            <input type="text" name="database"  class="form-control my-input" id="database" placeholder="Database">
+                                         </div>
+                                         <div class="text-center ">
+                                            <button type="submit" class=" btn btn-outline-primary send-button tx-tfm">Submit</button>
+                                         </div>
+                                      </form>
+                                   </div>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+       
+
+<div class="container-lg">
+    <div class="row mt-4">
+        <div class="col-2">  
+            <button type="button" class="btn btn-dark">Cancel</button>
+        </div>
+        <div class="col-6">  
+            <button type="button" class="btn btn-light">Save as Draft</button>
+        </div>
+        <div class="col-4">  
+            <button type="button" class="btn btn-primary">Next</button>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    $('#bologna-list a').on('click', function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+</script>
