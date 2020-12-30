@@ -1,0 +1,110 @@
+<div class="container-fluid">
+    <div class="row mt-4">
+    
+        <div class="container-fluid">
+            <div class="card text-black bg-light mb-3">
+                <div class="card-header"> 
+                    <ul class="nav nav-tabs card-header-tabs pull-right"  id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="inProgress-tab" data-toggle="tab" href="#inProgress" role="tab" aria-controls="inProgress" aria-selected="true">In Progress</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pending-tab" data-toggle="tab" href="#pending" role="tab" aria-controls="pending" aria-selected="false">Pending</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="paused-tab" data-toggle="tab" href="#paused" role="tab" aria-controls="paused" aria-selected="false">Paused</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="error-tab" data-toggle="tab" href="#error" role="tab" aria-controls="error" aria-selected="false">Error</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="completed-tab" data-toggle="tab" href="#completed" role="tab" aria-controls="completed" aria-selected="false">Completed</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="drafts-tab" data-toggle="tab" href="#drafts" role="tab" aria-controls="drafts" aria-selected="false">Drafts</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <div class="tab-content" id="myTabContent">
+                        <!-- In Progress Tab -->
+                        <div class="tab-pane fade show active" id="inProgress" role="tabpanel" aria-labelledby="inProgress-tab">
+                            <div class="row">
+                                <div class="col-md-4 mx-auto">
+                                    <app-card></app-card>
+                                </div>
+                             </div>
+                        </div>
+                        <!-- Pending Tab -->
+                        <div class="tab-pane fade" id="pending" role="tabpanel" aria-labelledby="oracle-tab">
+                            <div class="row">
+                                <div class="col-md-4 mx-auto">
+                                      <app-card></app-card>
+                                </div>
+                                <div class="col-md-4 mx-auto">
+                                    <app-card></app-card>
+                              </div>
+                            </div>
+                        </div>
+                        <!-- Paused Tab -->
+                        <div class="tab-pane fade" id="paused" role="tabpanel" aria-labelledby="paused-tab">
+                            <div class="row">
+                                <div class="col-md-4 mx-auto">
+                                      <app-card></app-card>
+                                </div>
+                                <div class="col-md-4 mx-auto">
+                                    <app-card></app-card>
+                              </div>
+                              <div class="col-md-4 mx-auto">
+                                <app-card></app-card>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- Error Tab -->
+                        <div class="tab-pane fade" id="error" role="tabpanel" aria-labelledby="error-tab">
+                            <div class="row">
+                                <div class="col-md-4 mx-auto">
+                                      <app-card></app-card>
+                                </div>
+                                <div class="col-md-4 mx-auto">
+                                    <app-card></app-card>
+                              </div>
+                              <div class="col-md-4 mx-auto">
+                                <app-card></app-card>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- Completed Tab -->
+                        <div class="tab-pane fade" id="completed" role="tabpanel" aria-labelledby="completed-tab">
+                            <div class="row">
+                                <div class="col-md-4 mx-auto">
+                                      <app-card></app-card>
+                                </div>
+                                <div class="col-md-4 mx-auto">
+                                    <app-card></app-card>
+                              </div>
+                              <div class="col-md-4 mx-auto">
+                                <app-card></app-card>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- Drafts Tab -->
+                        <div class="tab-pane fade" id="drafts" role="tabpanel" aria-labelledby="drafts-tab">
+                            <div class="row">
+                                <div class="col-md-4 mx-auto">
+                                      <app-card></app-card>
+                                </div>
+                                <div class="col-md-4 mx-auto">
+                                    <app-card></app-card>
+                              </div>
+                              <div class="col-md-4 mx-auto">
+                                <app-card></app-card>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

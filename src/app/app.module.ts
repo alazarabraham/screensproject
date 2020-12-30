@@ -3,15 +3,25 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SidebarComponent } from './components/navigation/sidebar/sidebar.component';
-import { StreamdataComponent } from './components/ingestions/streamdata/streamdata/streamdata.component';
+import { HomepageComponent } from './components/homepage/homepage.component';
+import { CardComponent } from './components/cards/card/card.component';
+import { TabsAndCardsComponent } from './components/databasetabs/tabs-and-cards/tabs-and-cards.component';
+import { RdbmsComponent } from './components/databaseIngestions/rdbms/rdbms.component';
+import { StreamingdataComponent } from './components/databaseIngestions/streamingdata/streamingdata.component';
+import { SidenavComponent } from './components/reusablecomponents/navbar/sidenav/sidenav.component';
+import { FlatfileComponent } from './components/databaseIngestions/flatfile/flatfile.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     routingComponents,
-    SidebarComponent,
-    StreamdataComponent,
+    HomepageComponent,
+    CardComponent,
+    TabsAndCardsComponent,
+    RdbmsComponent,
+    StreamingdataComponent,
+    SidenavComponent,
+    FlatfileComponent,
   ],
   imports: [
     BrowserModule,

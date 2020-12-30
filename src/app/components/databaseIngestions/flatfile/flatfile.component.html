@@ -1,0 +1,127 @@
+<div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <app-sidenav></app-sidenav>
+    <!-- /#sidebar-wrapper -->
+    
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li> -->
+          </ul>
+          <i class="fas fa-user"></i>
+
+        </div>
+      </nav>
+    <!--First row-->
+    <div class="container-fluid">
+        <div class="row mt-2">
+            <div class="col">
+                <h1 class="h1">Ingest Flat File</h1>
+            </div>
+        </div>
+    
+    </div>
+    
+    <!--Second row (Steps and process)-->
+
+    <div class="container-fluid">
+        <div class="row mt-2">
+                <!--Steps for ingestions-->
+
+                <div class="col-2" >    
+                        <i class="fas fa-database" ></i>                
+                    <h1 class="h6">Source Data</h1>
+                </div>
+                <!-- <div class="col-1">    
+                    <i class="fas fa-arrow-alt-circle-right"></i>
+                </div> -->
+                <div class="col-5">    
+                    <i class="fas fa-wrench"></i>
+                    <h1 class="h6">Configure Ingestion</h1>
+                </div>
+        </div>
+    </div>
+
+    <!--Drag and drop CSV-->
+
+
+    <div class="container-fluid">
+        <div class="row mt-4">
+        
+            <div class="container-fluid">
+                <div class="card text-black bg-light mb-3">
+                    <div class="card-header text-primary">Add CSV Files</div>
+                    <div class="card-body">
+                    <h5 class="card-title">Added Files:</h5> 
+    
+                            <!-- Drag and drop -->
+                        <div class="col">
+                            <form method="post" action="#" id="#">
+                                <div class="form-group files">
+                                    <input type="file" class="form-control" multiple="">
+                                </div>
+                            </form>     
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <!--Pagination arrows-->  
+
+    <div class="container-fluid">
+        <div class="row mt-4">
+            <div class="col-8">  
+                <button type="button" class="btn btn-dark">Cancel</button>
+            </div>
+            <div class="col-4">  
+                <button type="button" class="btn btn-primary">Next</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    </div>
+    <!-- /#page-content-wrapper -->
+
+</div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
+
