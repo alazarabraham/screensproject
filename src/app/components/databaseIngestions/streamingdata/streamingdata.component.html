@@ -38,41 +38,49 @@
     
         <!--First row-->
     <div class="container-fluid">
-        <div class="row mt-2">
-            <div class="col">
-                <h1 class="h1">Ingest Stream data</h1>
+        <div class="container">
+            <div class="row mt-2">
+                <div class="col">
+                    <h1 class="h1">Ingest Stream data</h1>
+                </div>
             </div>
         </div>
+        
 
     </div>
 
     <!--Source row-->
     <div class="container-fluid">
-    <div class="row mt-2">
-        <div class="col-1">
-            <h1 class="text-primary h5">Source</h1>
-        </div>
-        <div class="col-2">
-            <div class="btn-group">
-                <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Kafka
-                </button>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Separated link</a>
+        <div class="container">
+            <div class="row mt-2">
+                <div class="col-1">
+                    <h1 class="text-primary h5">Source</h1>
                 </div>
-              </div>        </div>
-    </div>
+                <div class="col-2">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Kafka
+                        </button>
+                        <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                    </div>       
+                </div>
+            </div>
+        </div>
+    
 
-</div>
+    </div>
         
     <!--Second row (Steps and process)-->
 
     <div class="container-fluid">
-        <div class="row mt-2">
+        <div class="container">
+           <div class="row mt-2">
                 <!--Steps for ingestions-->
 
                 <div class="col-2" >    
@@ -90,110 +98,123 @@
                     <i class="fas fa-info"></i>
                     <h1 class="h6">Configuration Details</h1>
                 </div>
+            </div> 
         </div>
+        
     </div>
 
     <!--Cluster forms-->
 
     <div class="container-fluid">
-        <div class="row mt-4">
-    
-            <div class="container-fluid">
-                <div class="card text-black mb-3">
-                    <div class="card-header"> 
-                        <div class="row">
-                            <div class="col-11">
-                                <h1 class="h4">Cluster</h1>
-                            </div>
-                            <div class="col-1">
-                                <i class="fas fa-trash"></i>
+        <div class="container">
+            <div class="row mt-4">
+        
+                <div class="container-fluid">
+                    <div class="card text-black mb-3">
+                        <div class="card-header"> 
+                            <div class="row">
+                                <div class="col-11">
+                                    <h1 class="h4">Cluster</h1>
+                                </div>
+                                <div class="col-1">
+                                    <button class="btn btn-dark">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="card-body">
-                        <!-- first form -->
-                        <div class="row">
-                            <div class="col-10">
-                                <form>
-                                    <div class="row">
-                                      <div class="col">
-                                        <input type="text" class="form-control" placeholder="Host">
-                                      </div>
-                                      <div class="col">
-                                        <input type="text" class="form-control" placeholder="Port">
-                                      </div>
+                        <div class="card-body">
+                            <div class="container">
+                            <!-- first form -->
+                                <div class="row">
+                                    <div class="col-10">
+                                        <form>
+                                            <div class="row">
+                                            <div class="col">
+                                                <input type="text" class="form-control" placeholder="Host">
+                                            </div>
+                                            <div class="col">
+                                                <input type="text" class="form-control" placeholder="Port">
+                                            </div>
+                                            </div>
+                                        </form>
                                     </div>
-                                  </form>
-                            </div>
-                            <div class="col-2">
-                                <button class="btn btn-light"><i class="fas fa-trash"></i></button>
-                            </div>
-                        </div>
-                        <!-- second form -->
+                                    <div class="col-2">
+                                        <button class="btn btn-light"><i class="fas fa-trash"></i></button>
+                                    </div>
+                                </div>
+                                <!-- second form -->
 
-                        <div class="row mt-2">
-                            <div class="col-10">
-                                <form>
-                                    <div class="row">
-                                      <div class="col">
-                                        <input type="text" class="form-control" placeholder="Host">
-                                      </div>
-                                      <div class="col">
-                                        <input type="text" class="form-control" placeholder="Port">
-                                      </div>
+                                <div class="row mt-2">
+                                    <div class="col-10">
+                                        <form>
+                                            <div class="row">
+                                            <div class="col">
+                                                <input type="text" class="form-control" placeholder="Host">
+                                            </div>
+                                            <div class="col">
+                                                <input type="text" class="form-control" placeholder="Port">
+                                            </div>
+                                            </div>
+                                        </form>
                                     </div>
-                                  </form>
-                            </div>
-                            <div class="col-2">
-                                <button class="btn btn-light"><i class="fas fa-trash"></i></button>
-                            </div>
-                        </div>
-                        
-                        <!-- third form -->
+                                    <div class="col-2">
+                                        <button class="btn btn-light"><i class="fas fa-trash"></i></button>
+                                    </div>
+                                </div>
+                                
+                                <!-- third form -->
 
-                        <div class="row mt-2">
-                            <div class="col-10">
-                                <form>
-                                    <div class="row">
-                                      <div class="col">
-                                        <input type="text" class="form-control" placeholder="Host">
-                                      </div>
-                                      <div class="col">
-                                        <input type="text" class="form-control" placeholder="Port">
-                                      </div>
+                                <div class="row mt-2">
+                                    <div class="col-10">
+                                        <form>
+                                            <div class="row">
+                                            <div class="col">
+                                                <input type="text" class="form-control" placeholder="Host">
+                                            </div>
+                                            <div class="col">
+                                                <input type="text" class="form-control" placeholder="Port">
+                                            </div>
+                                            </div>
+                                        </form>
                                     </div>
-                                  </form>
+                                    <div class="col-2">
+                                        <button class="btn btn-light"><i class="fas fa-trash"></i></button>
+                                    </div>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col">
+                                        <button class="btn btn-primary"><i class="fas fa-plus"></i>Add Host</button>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-2">
-                                <button class="btn btn-light"><i class="fas fa-trash"></i></button>
-                            </div>
-                        </div>
-                        <div class="row mt-2">
-                            <div class="col">
-                                <button class="btn btn-primary"><i class="fas fa-plus"></i>Add Host</button>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         
+        
     </div>
     
     <!-- Pagination arrows -->
 
     <div class="container-fluid">
-        <div class="row mt-4">
-            <div class="col-2">  
-                <button type="button" class="btn btn-dark">Cancel</button>
-            </div>
-            <div class="col-6">  
-                <button type="button" class="btn btn-light">Save as Draft</button>
-            </div>
-            <div class="col-4">  
-                <button type="button" class="btn btn-primary">Next</button>
+        <div class="container">
+            <div class="row mt-4">
+                <div class="col-2">  
+                    <button type="button" class="btn btn-dark">Cancel</button>
+                </div>
+                <div class="col-6">  
+                    <button type="button" class="btn btn-light">Save as Draft</button>
+                </div>
+                <div class="col-4">  
+                    <button type="button" class="btn btn-primary">Next</button>
+                </div>
             </div>
         </div>
+       
     </div>
 
     

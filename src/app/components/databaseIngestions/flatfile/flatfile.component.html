@@ -36,18 +36,22 @@
       </nav>
     <!--First row-->
     <div class="container-fluid">
-        <div class="row mt-2">
-            <div class="col">
-                <h1 class="h1">Ingest Flat File</h1>
+        <div class="container">
+            <div class="row mt-2">
+                <div class="col">
+                    <h1 class="h1">Ingest Flat File</h1>
+                </div>
             </div>
         </div>
+        
     
     </div>
     
     <!--Second row (Steps and process)-->
 
     <div class="container-fluid">
-        <div class="row mt-2">
+        <div class="container">
+            <div class="row mt-2">
                 <!--Steps for ingestions-->
 
                 <div class="col-2" >    
@@ -61,47 +65,57 @@
                     <i class="fas fa-wrench"></i>
                     <h1 class="h6">Configure Ingestion</h1>
                 </div>
+            </div>
         </div>
+        
     </div>
 
     <!--Drag and drop CSV-->
 
 
     <div class="container-fluid">
-        <div class="row mt-4">
+        <div class="container">
+            <div class="row mt-4">          
+                <div class="container-fluid">
+                    <div class="card text-black mb-3">
+                        <div class="card-header bg-light text-primary">Add CSV Files</div>
+                        <div class="card-body">
+                        <h5 class="card-title">Added Files:</h5> 
         
-            <div class="container-fluid">
-                <div class="card text-black bg-light mb-3">
-                    <div class="card-header text-primary">Add CSV Files</div>
-                    <div class="card-body">
-                    <h5 class="card-title">Added Files:</h5> 
-    
-                            <!-- Drag and drop -->
-                        <div class="col">
-                            <form method="post" action="#" id="#">
-                                <div class="form-group files">
-                                    <input type="file" class="form-control" multiple="">
+                                <!-- Drag and drop -->
+                            <div class="container">
+                                <div class="col">
+                                    <form method="post" action="#" id="#">
+                                        <div class="form-group files">
+                                            <input type="file" class="form-control" multiple="">
+                                        </div>
+                                    </form>     
                                 </div>
-                            </form>     
+                            </div>
+                            
                         </div>
                     </div>
+                    
                 </div>
-                
             </div>
         </div>
+        
     </div>
     
     <!--Pagination arrows-->  
 
     <div class="container-fluid">
-        <div class="row mt-4">
-            <div class="col-8">  
-                <button type="button" class="btn btn-dark">Cancel</button>
-            </div>
-            <div class="col-4">  
-                <button type="button" class="btn btn-primary">Next</button>
+        <div class="container">
+            <div class="row mt-4">
+                <div class="col-8">  
+                    <button type="button" class="btn btn-dark">Cancel</button>
+                </div>
+                <div class="col-4">  
+                    <button type="button" class="btn btn-primary">Next</button>
+                </div>
             </div>
         </div>
+        
     </div>
 
 
