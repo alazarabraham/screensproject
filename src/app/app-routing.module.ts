@@ -8,7 +8,8 @@ const routes: Routes = [
   { path: '', component: HomepageComponent },
   { path: 'ingestflatfile', component: FlatfileComponent },
   { path: 'ingestrdbms', component: RdbmsComponent },
-  { path: 'ingeststreamdata', component: StreamingdataComponent }
+  { path: 'ingeststreamdata', component: StreamingdataComponent },
+  
 
 
 
