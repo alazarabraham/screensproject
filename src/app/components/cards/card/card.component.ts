@@ -30,9 +30,11 @@ export class CardComponent implements OnInit {
     var date = d.getDate();
     var month = months[d.getMonth()];
     var year = d.getFullYear();
-    let x: string = month + " " + date + "," + " " + year + " " + hr + ":" + min + " " + ampm;
+    let x: string = month + " " + date + "," + " " + year;
     return x;
   }
+
+
   ngOnInit(): void {
   }
 

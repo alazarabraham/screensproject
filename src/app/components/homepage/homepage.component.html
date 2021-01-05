@@ -5,7 +5,7 @@
     <!-- /#sidebar-wrapper -->
 
     <!-- Page Content -->
-    <div id="page-content-wrapper">
+    <div id="page-content-wrapper" >
 
       <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
 
@@ -13,7 +13,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" >
           <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
             <li class="nav-item active">
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -49,12 +49,12 @@
     
                 <div class="col-md-6 col-sm-4">
                       <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Search by config. name/ description" aria-label="Recipient's username" aria-describedby="basic-addon2">
                         <div class="input-group-append">
                           <button type="submit" class="input-group-text" id="basic-addon2">
                             <i class="fas fa-search"></i>
                           </button>
                         </div>
+                        <input type="text" class="form-control" placeholder="Search by config. name/ description" aria-label="Recipient's username" aria-describedby="basic-addon2">
                       </div>
     
                     
@@ -64,6 +64,7 @@
                 <div class="col-md-6 col-sm-4">
                     <div class="dropdown">
                         <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          
                           Ingest
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -81,15 +82,15 @@
             
         </div>
            
-
         <!--Third row-->
         <div class="container-fluid">
           <div class="container">
             <div class="row mt-4">
                 <div class="col-md-4">
                 <h1 class="h5 text-primary" >Ingestion Type</h1>
+                <button (click)="fetchApi()">Click</button>
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-4">
                 <!--Drop down-->
 
                 <div class="btn-group">
