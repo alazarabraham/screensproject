@@ -10,6 +10,9 @@ import { RdbmsComponent } from './components/databaseIngestions/rdbms/rdbms.comp
 import { StreamingdataComponent } from './components/databaseIngestions/streamingdata/streamingdata.component';
 import { SidenavComponent } from './components/reusablecomponents/navbar/sidenav/sidenav.component';
 import { FlatfileComponent } from './components/databaseIngestions/flatfile/flatfile.component';
+import { ViewdetailsComponent } from './components/details/viewdetails/viewdetails.component';
+import { EditdetailsComponent } from './components/details/editdetails/editdetails.component';
+import { ExecutiondetailsComponent } from './components/details/executiondetails/executiondetails.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +25,9 @@ import { FlatfileComponent } from './components/databaseIngestions/flatfile/flat
     StreamingdataComponent,
     SidenavComponent,
     FlatfileComponent,
+    ViewdetailsComponent,
+    EditdetailsComponent,
+    ExecutiondetailsComponent,
   ],
   imports: [
     BrowserModule,
