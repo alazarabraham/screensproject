@@ -13,6 +13,7 @@ import { FlatfileComponent } from './components/databaseIngestions/flatfile/flat
 import { ViewdetailsComponent } from './components/details/viewdetails/viewdetails.component';
 import { EditdetailsComponent } from './components/details/editdetails/editdetails.component';
 import { ExecutiondetailsComponent } from './components/details/executiondetails/executiondetails.component';
+import { DetailscardsComponent } from './components/details/detailscards/detailscards.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { ExecutiondetailsComponent } from './components/details/executiondetails
     ViewdetailsComponent,
     EditdetailsComponent,
     ExecutiondetailsComponent,
+    DetailscardsComponent,
   ],
   imports: [
     BrowserModule,
