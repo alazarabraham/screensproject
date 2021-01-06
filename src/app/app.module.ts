@@ -10,6 +10,10 @@ import { RdbmsComponent } from './components/databaseIngestions/rdbms/rdbms.comp
 import { StreamingdataComponent } from './components/databaseIngestions/streamingdata/streamingdata.component';
 import { SidenavComponent } from './components/reusablecomponents/navbar/sidenav/sidenav.component';
 import { FlatfileComponent } from './components/databaseIngestions/flatfile/flatfile.component';
+import { HttpClientModule } from "@angular/common/http";
+import { FormsModule } from '@angular/forms';
+import { Observable, of, from } from 'rxjs';
+
 
 @NgModule({
   declarations: [
@@ -21,11 +25,14 @@ import { FlatfileComponent } from './components/databaseIngestions/flatfile/flat
     RdbmsComponent,
     StreamingdataComponent,
     SidenavComponent,
-    FlatfileComponent,
+    FlatfileComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
