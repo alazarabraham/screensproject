@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Ingestion } from "../../models/Ingestion"
 
 
@@ -11,10 +12,13 @@ import { Ingestion } from "../../models/Ingestion"
 export class TabsAndCardsComponent implements OnInit {
 
 
-  private endPoint: string = "http://localhost:8080/api/v1/ingestions"
+  private getAllEndPoint: string = "http://localhost:8080/api/v1/ingestions"
+  private crudEndpoint: string = "http://localhost:8080/api/v1/ingestion"
+
+  public ingestion;
   public ingestions = [];
 
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient, private router: Router) {
 
   }
 
@@ -22,7 +26,12 @@ export class TabsAndCardsComponent implements OnInit {
 
 
   getData() {
-    return this.http.get<Ingestion[]>(this.endPoint);
+    return this.http.get<Ingestion[]>(this.getAllEndPoint);
+  }
+
+  deleteService(id) {
+    return this.http.delete<Ingestion>(this.crudEndpoint)
+    this.router.navigate(['/']);
 
   }
 
@@ -32,6 +41,20 @@ export class TabsAndCardsComponent implements OnInit {
         this.ingestions = data;
         console.log(this.ingestions)
       })
+
+
+
   }
+
+  deleteIngestion(id) {
+    console.log(id);
+    this.http.delete(this.crudEndpoint).
+      subscribe(() => console.log("Deleted"));
+
+    this.router.navigate(['/']);
+
+  }
+
+
 
 }

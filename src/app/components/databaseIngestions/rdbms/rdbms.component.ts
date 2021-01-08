@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from "@angular/common/http"
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-rdbms',
@@ -8,7 +9,7 @@ import { HttpClient } from "@angular/common/http"
 })
 export class RdbmsComponent implements OnInit {
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private router: Router) { }
 
   name: string;
   url: string;
@@ -32,6 +33,8 @@ export class RdbmsComponent implements OnInit {
     }).toPromise().then((data: {}) => {
 
     })
+    this.router.navigate(['/']);
+
 
   }
 

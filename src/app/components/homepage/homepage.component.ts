@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Ingestion } from "..//models/Ingestion";
 import { Observable, of, from } from 'rxjs';
 import { HttpClient } from "@angular/common/http"
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-homepage',
@@ -30,5 +31,6 @@ export class HomepageComponent implements OnInit {
         console.log(this.ingestions)
       })
   }
+
 
 }
