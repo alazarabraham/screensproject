@@ -13,6 +13,8 @@ import { FlatfileComponent } from './components/databaseIngestions/flatfile/flat
 import { HttpClientModule } from "@angular/common/http";
 import { FormsModule } from '@angular/forms';
 import { Observable, of, from } from 'rxjs';
+import { HomeComponent } from './components/home/home/home.component';
+import { StreamdataComponent } from './components/ingestions/streamdata/streamdata.component';
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import { Observable, of, from } from 'rxjs';
     RdbmsComponent,
     StreamingdataComponent,
     SidenavComponent,
-    FlatfileComponent
+    FlatfileComponent,
+    HomeComponent,
+    StreamdataComponent
   ],
   imports: [
     BrowserModule,

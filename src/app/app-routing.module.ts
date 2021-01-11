@@ -1,14 +1,18 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomepageComponent } from './components/homepage/homepage.component';
-import { RdbmsComponent } from './components/databaseIngestions/rdbms/rdbms.component';
-import { StreamingdataComponent } from './components/databaseIngestions/streamingdata/streamingdata.component'
-import { FlatfileComponent } from './components/databaseIngestions/flatfile/flatfile.component'
+import { RdbmsComponent } from "./components/ingestions/rdbms/rdbms.component";
+
+import { FlatfileComponent } from './components/ingestions/flatfile/flatfile.component'
+import { HomeComponent } from './components/home/home/home.component';
+import { StreamdataComponent } from './components/ingestions/streamdata/streamdata.component';
 const routes: Routes = [
-  { path: '', component: HomepageComponent },
-  { path: 'ingestflatfile', component: FlatfileComponent },
-  { path: 'ingestrdbms', component: RdbmsComponent },
-  { path: 'ingeststreamdata', component: StreamingdataComponent }
+  { path: 'home', component: HomepageComponent },
+  { path: '', component: HomeComponent },
+  { path: 'ingestions/rdbms', component: RdbmsComponent },
+  { path: 'ingestions/flatfile', component: FlatfileComponent },
+  { path: 'ingestions/streamdata', component: StreamdataComponent },
+
 
 
 
@@ -19,4 +23,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponents = [RdbmsComponent, StreamingdataComponent, HomepageComponent]
+export const routingComponents = [HomeComponent, RdbmsComponent, StreamdataComponent, HomepageComponent, FlatfileComponent]
