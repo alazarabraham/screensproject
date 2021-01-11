@@ -888,7 +888,6 @@ body>.navbar-collapse[data-color="purple"]:after {
 .btn:active,
 .btn.active,
 .open>.btn.dropdown-toggle {
-  background-color: transparent;
   color: black;
 }
 
@@ -922,7 +921,6 @@ fieldset[disabled] .btn.active {
 
 .btn.btn-fill {
   color: #FFFFFF;
-  background-color: #888888;
   opacity: 1;
   filter: alpha(opacity=100);
 }
@@ -1499,19 +1497,19 @@ fieldset[disabled] .btn-neutral.active {
 }
 
 .form-control::-moz-placeholder {
-  color: #DDDDDD;
+  color: black;
   opacity: 1;
   filter: alpha(opacity=100);
 }
 
 .form-control:-moz-placeholder {
-  color: #DDDDDD;
+  color: black;
   opacity: 1;
   filter: alpha(opacity=100);
 }
 
 .form-control::-webkit-input-placeholder {
-  color: #DDDDDD;
+  color: black;
   opacity: 1;
   filter: alpha(opacity=100);
 }
@@ -1597,7 +1595,7 @@ fieldset[disabled] .btn-neutral.active {
 
 .input-group-addon {
   background-color: #FFFFFF;
-  border: 1px solid #E3E3E3;
+  border: 1px solid black;
   border-radius: 4px;
 }
 
@@ -1620,7 +1618,7 @@ fieldset[disabled] .btn-neutral.active {
 .form-control:focus+.input-group-addon,
 .form-control:focus~.input-group-addon {
   background-color: #FFFFFF;
-  border-color: #9A9A9A;
+  border-color: black;
 }
 
 .input-group .form-control:first-child,
@@ -1640,7 +1638,7 @@ fieldset[disabled] .btn-neutral.active {
 .form-control[disabled],
 .form-control[readonly],
 fieldset[disabled] .form-control {
-  background-color: #F5F5F5;
+  background-color: black;
   color: #888888;
   cursor: not-allowed;
 }
@@ -1708,7 +1706,6 @@ fieldset[disabled] .form-control {
   top: 50%;
   margin-top: -13px;
   z-index: 1033;
-  background-color: #FFFFFF;
   display: block;
   border-radius: 50%;
   opacity: .4;
@@ -2431,11 +2428,11 @@ fieldset[disabled] .form-control {
 }
 
 /*!
-  Animate.css - http://daneden.me/animate
-  Licensed under the MIT license - http://opensource.org/licenses/MIT
-  
-  Copyright (c) 2015 Daniel Eden
-  */
+    Animate.css - http://daneden.me/animate
+    Licensed under the MIT license - http://opensource.org/licenses/MIT
+    
+    Copyright (c) 2015 Daniel Eden
+    */
 
 .animated {
   -webkit-animation-duration: 1s;
@@ -4861,21 +4858,21 @@ fieldset[disabled] .form-control {
 }
 
 /*--------------------------------
-  
-  nucleo-icons Web Font - built using nucleoapp.com
-  License - nucleoapp.com/license/
-  
-  -------------------------------- */
+    
+    nucleo-icons Web Font - built using nucleoapp.com
+    License - nucleoapp.com/license/
+    
+    -------------------------------- */
 
 /* @font-face {
-    font-family: 'nucleo-icons';
-    font-weight: normal;
-    font-style: normal;
-  } */
+      font-family: 'nucleo-icons';
+      font-weight: normal;
+      font-style: normal;
+    } */
 
 /*------------------------
-      base class definition
-  -------------------------*/
+        base class definition
+    -------------------------*/
 
 .nc-icon {
   display: inline-block;
@@ -4889,8 +4886,8 @@ fieldset[disabled] .form-control {
 }
 
 /*------------------------
-    change icon size
-  -------------------------*/
+      change icon size
+    -------------------------*/
 
 .nc-icon.lg {
   font-size: 1.33333333em;
@@ -4906,8 +4903,8 @@ fieldset[disabled] .form-control {
 }
 
 /*----------------------------------
-    add a square/circle background
-  -----------------------------------*/
+      add a square/circle background
+    -----------------------------------*/
 
 .nc-icon.square,
 .nc-icon.circle {
@@ -4921,8 +4918,8 @@ fieldset[disabled] .form-control {
 }
 
 /*------------------------
-    list icons
-  -------------------------*/
+      list icons
+    -------------------------*/
 
 .nc-icon-ul {
   padding-left: 0;
@@ -4957,8 +4954,8 @@ fieldset[disabled] .form-control {
 }
 
 /*------------------------
-    spinning icons
-  -------------------------*/
+      spinning icons
+    -------------------------*/
 
 .nc-icon.spin {
   -webkit-animation: nc-icon-spin 2s infinite linear;
@@ -5005,8 +5002,8 @@ fieldset[disabled] .form-control {
 }
 
 /*------------------------
-    rotated/flipped icons
-  -------------------------*/
+      rotated/flipped icons
+    -------------------------*/
 
 .nc-icon.rotate-90 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
@@ -5054,8 +5051,8 @@ fieldset[disabled] .form-control {
 }
 
 /*------------------------
-      font icons
-  -------------------------*/
+        font icons
+    -------------------------*/
 
 .nc-air-baloon::before {
   content: "\ea01";

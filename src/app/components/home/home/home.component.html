@@ -114,10 +114,13 @@
                         <div class="content">
                             <form>
                                 <div class="row">
-                                    <div class="col-md-12">
+                                    <div class="col-md-6">
+
+                                    </div>
+                                    <div class="col-md-6">
                                         <div class="dropdown">
-                                            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                              
+                                            <button class="btn btn-primary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                              <i class="fas fa-chevron-circle-left"></i>
                                               Ingest
                                             </button>
                                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -167,13 +170,17 @@
 
                
                         <div class="row mt-4">
-                            <div class="col-sm-4"  *ngFor="let ingestion of ingestions; let i = index;">
+                            <div class="col-md-4"  *ngFor="let ingestion of ingestions; let i = index;">
                               <div class=" card mb-3">
                                 <div class="card-body">
                                   <h3 class="card-title ">{{ingestion.name}}</h3>
                                   <p class="card-text">Id: {{ingestion.id}}</p>
+
+                                  <p class="card-text">URL: {{ingestion.source.attributes.url}}</p>
+                                  <p class="card-text">User: {{ingestion.source.attributes.username}}</p>
+
                                   <p class="card-text">Created: {{ingestion.createdAt}}</p>
-                                  <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+                    
                                   <div class="progress">
                                     <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                   </div>

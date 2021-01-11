@@ -1,13 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomepageComponent } from './components/homepage/homepage.component';
 import { RdbmsComponent } from "./components/ingestions/rdbms/rdbms.component";
 
 import { FlatfileComponent } from './components/ingestions/flatfile/flatfile.component'
 import { HomeComponent } from './components/home/home/home.component';
 import { StreamdataComponent } from './components/ingestions/streamdata/streamdata.component';
 const routes: Routes = [
-  { path: 'home', component: HomepageComponent },
   { path: '', component: HomeComponent },
   { path: 'ingestions/rdbms', component: RdbmsComponent },
   { path: 'ingestions/flatfile', component: FlatfileComponent },
@@ -23,4 +21,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponents = [HomeComponent, RdbmsComponent, StreamdataComponent, HomepageComponent, FlatfileComponent]
+export const routingComponents = [HomeComponent, RdbmsComponent, StreamdataComponent, FlatfileComponent]
